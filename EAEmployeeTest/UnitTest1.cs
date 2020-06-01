@@ -17,7 +17,7 @@ namespace EAEmployeeTest
     public class UnitTest1 : Base
     {
 
-        string url = ConfigReader.InitializeTest();
+        //string url = ConfigReader.InitializeTest();
         private IWebDriver driver;
 
         public void OpenBrowser(BrowserType browserType = BrowserType.Chrome)
@@ -46,6 +46,9 @@ namespace EAEmployeeTest
         [TestMethod]
         public void TestMethod1()
         {
+
+            ConfigReader.SetFrameworkSettings();
+            
             //DriverContext.Driver = new ChromeDriver();
             //DriverContext.Driver.Navigate().GoToUrl(url);
 
@@ -61,7 +64,7 @@ namespace EAEmployeeTest
             OpenBrowser(BrowserType.FireFox);
             LogHelpers.Write("Opened the browser !!!");
 
-            DriverContext.Browser.GoToUrl(url);
+            DriverContext.Browser.GoToUrl(Settings.AUT);
             LogHelpers.Write("Navigated to the page !!!");
 
             //LoginPage page = new LoginPage();

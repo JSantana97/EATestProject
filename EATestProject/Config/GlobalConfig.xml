@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EAAutoFramework>
+  <RunSettings>
+    <AUT>https://www.facebook.com/login</AUT>
+    <!-- Possible flag Chrome, Firefox, IE -->
+    <Browser>Firefox</Browser>
+    <!-- Possible flag Smoke, Reggretion, Unit -->
+    <TestType>SmokeTest</TestType>
+    <!-- Possible Flag Y, N -->
+    <IsLog>C:\\EAAutoLogs</IsLog>
+    <BuildName>DemoBuild</BuildName>
+    <!-- Possible Flag Y, N -->
+    <IsReport>N</IsReport>
+    <UserName>EAutoTeam</UserName>
+    <!-- Possible flag Selenium, Specflow -->
+    <Technology>Selenium</Technology>
+  </RunSettings>
+</EAAutoFramework>
