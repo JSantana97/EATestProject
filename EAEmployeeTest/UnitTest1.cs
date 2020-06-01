@@ -57,7 +57,7 @@ namespace EAEmployeeTest
             //System.Environment.SetEnvironmentVariable("webdriver.chrome.driver", @"C:\Users\Titanium\Documents\UdemyCJ\EATestProject\chromedriver.exe");
             //driver = new ChromeDriver(ops);
 
-            OpenBrowser(BrowserType.Chrome);
+            OpenBrowser(BrowserType.FireFox);
             LogHelpers.Write("Opened the browser !!!");
 
             DriverContext.Browser.GoToUrl(url);
