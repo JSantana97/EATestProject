@@ -9,6 +9,7 @@ using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using System.Threading.Tasks;
 using OpenQA.Selenium.Support.UI;
+using EAAutoFramework.Config;
 
 namespace EAEmployeeTest
 {
@@ -16,7 +17,7 @@ namespace EAEmployeeTest
     public class UnitTest1 : Base
     {
 
-        string url = "https://www.facebook.com/login";
+        string url = ConfigReader.InitializeTest();
         private IWebDriver driver;
 
         public void OpenBrowser(BrowserType browserType = BrowserType.Chrome)

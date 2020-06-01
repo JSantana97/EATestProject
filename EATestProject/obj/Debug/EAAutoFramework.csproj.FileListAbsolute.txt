@@ -17,3 +17,4 @@ C:\Users\Titanium\Documents\UdemyCJ\EATestProject\EATestProject\bin\Debug\ExcelD
 C:\Users\Titanium\Documents\UdemyCJ\EATestProject\EATestProject\bin\Debug\ExcelDataReader.xml
 C:\Users\Titanium\Documents\UdemyCJ\EATestProject\EATestProject\bin\Debug\ExcelDataReader.DataSet.pdb
 C:\Users\Titanium\Documents\UdemyCJ\EATestProject\EATestProject\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\Titanium\Documents\UdemyCJ\EATestProject\EATestProject\bin\Debug\EAAutoFramework.dll.config
