@@ -48,19 +48,20 @@ namespace EAEmployeeTest
             //DriverContext.Driver = new ChromeDriver();
             //DriverContext.Driver.Navigate().GoToUrl(url);
 
-            //string fileName = Environment.CurrentDirectory.ToString() + "\\Data\\Login.xlsx";
+            string fileName = @"C:\Users\Titanium\Downloads\New\EAEmployeeTest\Data\Login.xlsx";
+            ExcelHelpers.PopulateInCollection(fileName);           
+            LogHelpers.CreateLogFile();
 
-            //ExcelHelpers.PopulateInCollection(fileName);           
-            //LogHelpers.CreateLogFile();
             //ChromeOptions ops = new ChromeOptions();
             //ops.AddArguments("--disable-notifications");
             //System.Environment.SetEnvironmentVariable("webdriver.chrome.driver", @"C:\Users\Titanium\Documents\UdemyCJ\EATestProject\chromedriver.exe");
             //driver = new ChromeDriver(ops);
-            OpenBrowser(BrowserType.Chrome);
-            //LogHelpers.Write("Opened the browser !!!");
-            DriverContext.Browser.GoToUrl(url);
 
-            //LogHelpers.Write("Navigated to the page !!!");
+            OpenBrowser(BrowserType.Chrome);
+            LogHelpers.Write("Opened the browser !!!");
+
+            DriverContext.Browser.GoToUrl(url);
+            LogHelpers.Write("Navigated to the page !!!");
 
             //LoginPage page = new LoginPage();
             //page.Login("", "");
@@ -74,7 +75,7 @@ namespace EAEmployeeTest
             //Login();
 
             CurrentPage = GetInstance<LoginPage>();
-            CurrentPage.As<LoginPage>().Login("sh4dow18711@gmail.com", "MGshadow7"); //ExcelHelpers.ReadData(1, "email"), ExcelHelpers.ReadData(1, "pass"));
+            CurrentPage.As<LoginPage>().Login(ExcelHelpers.ReadData(1, "email"), ExcelHelpers.ReadData(1, "pass"));
             //driver.FindElement(By.XPath("//a[@href='https://www.facebook.com/messages/t/']"));
             //WebDriverWait wait = new WebDriverWait(driver, new TimeSpan(10));
             //IWebElement firstResult = wait.Until(e => e.FindElement(By.XPath("//a[@href='https://www.facebook.com/messages/t/']")));

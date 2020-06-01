@@ -12,7 +12,7 @@ namespace EAAutoFramework.Helpers
         //Create a file which can store the log information
         public static void CreateLogFile()
         {
-            string dir = @"e:\EAAutoFramework\";
+            string dir = @"C:\Users\Titanium\Documents\UdemyCJ\EATestProject\EATestProjectEAAutoFramework\";
             if (Directory.Exists(dir))
             {
                 _streamw = File.AppendText(dir + _logFileName + ".log");
