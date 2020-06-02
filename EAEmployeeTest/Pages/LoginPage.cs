@@ -1,6 +1,8 @@
 ﻿using EAAutoFramework.Base;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using EAAutoFramework.Extensions;
+using System;
 
 namespace EAEmployeeTest.Pages
 {
@@ -37,8 +39,14 @@ namespace EAEmployeeTest.Pages
 
         public Messenger ClickMessenger()
         {
+            DriverContext.Driver.WaitForPageLoaded();
             lnkMessenger.Click();
             return GetInstance<Messenger>();
+        }
+
+        internal void CheckInfMessengerExist()
+        {
+            txtemail.AssertElementPresent();
         }
 
     }

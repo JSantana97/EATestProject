@@ -22,7 +22,7 @@ namespace EAAutoFramework.Config
             XPathItem logPath;
 
 
-            string strFileName = @"C:\Users\Titanium\Documents\UdemyCJ\EATestProject\EATestProject\ConfigGlobalConfig.xml";
+            string strFileName = @"C:\Users\Titanium\Documents\UdemyCJ\EATestProject\EATestProject\Config\GlobalConfig.xml";
             FileStream stream = new FileStream(strFileName, FileMode.Open);
             XPathDocument document = new XPathDocument(stream);
             XPathNavigator navigator = document.CreateNavigator();

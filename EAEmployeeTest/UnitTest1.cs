@@ -52,7 +52,7 @@ namespace EAEmployeeTest
             //DriverContext.Driver = new ChromeDriver();
             //DriverContext.Driver.Navigate().GoToUrl(url);
 
-            string fileName = @"C:\Users\Titanium\Downloads\New\EAEmployeeTest\Data\Login.xlsx";
+            string fileName = @"C:\Users\Titanium\Documents\UdemyCJ\EATestProject\EAEmployeeTest\Data\Login.xlsx";
             ExcelHelpers.PopulateInCollection(fileName);           
             LogHelpers.CreateLogFile();
 
@@ -86,6 +86,7 @@ namespace EAEmployeeTest
             //Messenger
             //Messenger messengerchat = page.ClickMessenger();
             CurrentPage = CurrentPage.As<LoginPage>().ClickMessenger();
+            //CurrentPage.As<LoginPage>().CheckInfMessengerExist();
             CurrentPage.As<Messenger>().ClickProfile();
         }
 

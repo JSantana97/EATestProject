@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EAAutoFramework.Extensions;
 
 namespace EAEmployeeTest.Pages
 {
@@ -21,6 +22,7 @@ namespace EAEmployeeTest.Pages
 
         public Profile ClickProfile()
         {
+            DriverContext.Driver.WaitForPageLoaded();
             profile.Click();
             return new Profile();
         }
