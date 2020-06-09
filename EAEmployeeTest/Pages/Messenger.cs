@@ -10,7 +10,7 @@ using EAAutoFramework.Extensions;
 
 namespace EAEmployeeTest.Pages
 {
-    class Messenger : BasePage
+    internal class Messenger : BasePage
     {
 
         [FindsBy (How = How.XPath, Using = "//*[@placeholder='Buscar en Messenger']")]

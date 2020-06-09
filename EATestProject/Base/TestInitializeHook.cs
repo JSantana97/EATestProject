@@ -50,10 +50,10 @@ namespace EAAutoFramework.Base
                     DriverContext.Driver = new ChromeDriver();
                     DriverContext.Browser = new Browser(DriverContext.Driver);
                     break;
-                //default:
-                    //DriverContext.Driver = new ChromeDriver();
-                    //DriverContext.Browser = new Browser(DriverContext.Driver);
-                    //break;
+                default:
+                    DriverContext.Driver = new ChromeDriver();
+                    DriverContext.Browser = new Browser(DriverContext.Driver);
+                    break;
             }
         }
 

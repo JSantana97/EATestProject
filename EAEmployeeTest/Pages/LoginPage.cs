@@ -9,13 +9,6 @@ namespace EAEmployeeTest.Pages
     class LoginPage : BasePage
     {
 
-        //Objects for the login page
-        [FindsBy(How = How.LinkText, Using = "Iniciar sesión")]
-        IWebElement lnkLogin { get; set; }
-
-        [FindsBy (How = How.XPath, Using = "(//*[@class='_5afe'])[3]")]
-        IWebElement lnkMessenger { get; set; } 
-
         [FindsBy(How = How.Id, Using = "email")]
         IWebElement txtemail { get; set; }
 
@@ -29,25 +22,12 @@ namespace EAEmployeeTest.Pages
         {
             txtemail.SendKeys(email);
             txtpassword.SendKeys(pass);
+        }
+
+        public HomePage ClickLoginButton()
+        {
             loginbutton.Submit();
+            return GetInstance<HomePage>();
         }
-
-        //public void ClickLoginLink()
-        //{
-        //    lnkLogin.Click();
-        //}
-
-        public Messenger ClickMessenger()
-        {
-            DriverContext.Driver.WaitForPageLoaded();
-            lnkMessenger.Click();
-            return GetInstance<Messenger>();
-        }
-
-        internal void CheckInfMessengerExist()
-        {
-            txtemail.AssertElementPresent();
-        }
-
     }
 }

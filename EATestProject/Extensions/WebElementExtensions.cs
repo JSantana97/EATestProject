@@ -25,6 +25,11 @@ namespace EAAutoFramework.Extensions
             return ddl.AllSelectedOptions;
         }
 
+        public static string GetLinkText(this IWebElement element)
+        {
+            return element.Text;
+        }
+
         public static void SelectDropDownList(this IWebElement element, string value)
         {
 

@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechTalk.SpecFlow;
 
 namespace EAEmployeeTest
 {
+    [Binding]
     public class HookInitialize : TestInitializeHook
     {
 
@@ -14,6 +16,12 @@ namespace EAEmployeeTest
         {
             InitializeSettings();
             NavigateSite();
+        }
+
+        [BeforeFeature]
+        public static void TestStart()
+        {
+            HookInitialize init = new HookInitialize();
         }
 
     }
