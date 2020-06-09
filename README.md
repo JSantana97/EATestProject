@@ -1,5 +1,5 @@
 Aquí subire mis códigos correspondientes a mis prácticas de los cursos que estoy llevando.
 
 Reporte:
-Al parecer el problema del wait que se quería implementar ya se soluciono, solo falta revolver lo del pop up de la página
-y el código al fin será completamente autónomo.
+Le agregue SpecFlow al código, tuve unos problemas y tuve que borrar y agregar unas cosas, pero creo que ya los resolví,
+al código un le faltan unas cosas, espero terminarlo lo mas pronto posible.
